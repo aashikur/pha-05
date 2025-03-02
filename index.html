@@ -7,7 +7,7 @@
     <style type="text/tailwindcss">
       @theme {
         --color-acent: #3752FDB3;
-        --color-primary:#3752FD;
+        --color-primary:#000000;
         --color-secondary:#000000B3;
         --color-text : #00000080;
         --color-bg_color: #F4F7FF;
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Assingment 05</title>
 </head>
-<body class="px-4">
+<body class="px-4 bg-bg_color">
 
     <!-- **Assingment 05 ** (: Thanks me later :) ~ {All The Best to You!!}
 
@@ -53,6 +53,62 @@
 
     <!-- ================================================================= -->
 
+    <main class="max-w-[1536px] mx-auto">
+        <!-- navbar  -->
+        <nav class="flex justify-between mt-5 p-3 md:p-5  bg-white rounded-xl">
+            <!-- logo  -->
+            <div class="flex items-center cursor-pointer">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <h1 class="hidden md:block text-3xl font-extralight ml-2">Dev<span class="font-semibold">Board</span></h1>
+            </div>
+            
+            <!-- tesk & Random color  -->
+            <div class="flex items-center gap-3 md:gap-6">
+                <div class="flex items-center bg-bg_color p-1 rounded-3xl px-5 py-2"><span class="w-6"><img class="" src="assets/checkbox.png" alt=""> </span><h1 class="ml-2 text-2xl font-semibold">23</h1></div>
+                <div class="items-center bg-bg_color p-3 rounded-full cursor-pointer"><img src="assets/theme-btn.png" alt=""></div>
+            </div> 
+        </nav>
+
+        <!-- Main Content  -->
+         <div class="flex flex-col md:flex-row bg-white mt-4 p-5 rounded-xl gap-3">
+            <!-- tesk control -->
+            <div class="md:w-9/12 gap-3 grid grid-cols-1 md:grid-cols-3">
+                <!-- tesk assinged  -->
+                <div class="flex  bg-bg_color rounded-xl p-7">
+                    <div class="flex gap-x-2 md:gap-x-3 items-center">
+                        <div><img src="assets/checkbox.png" alt=""></div>
+                        <div>
+                            <p class="text-text">Task Assinged</p>
+                            <h1 class="text-primary text-3xl font-semibold">05</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Discover Today-->
+                <div class="bg-gradient-to-r from-acent to-[#9BA8F8B3] flex rounded-xl p-7">
+                    <div class="flex gap-x-2 md:gap-x-3 items-center">
+                        <div><img src="assets/board.png" alt=""></div>
+                        <div>
+                            <p class="text-white">Discover Something <br> New Today!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Date Today  -->
+                <div class="flex  bg-bg_color rounded-xl p-7">
+                    <div class="flex gap-x-2 md:gap-x-3 items-center">
+                        <div><img src="assets/calender.png" alt=""></div>
+                        <div>
+                            <p class="text-text">Wed,</p>
+                            <h1 class="text-primary text-xl font-semibold">Jul 28 2025</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- History Main  -->
+            <div class="md:w-3/12 mt-100 md:mt-0 bg-bg_color ">Active Log</div>
+         </div>
+    </main> 
 
 </body>
 </html>
