@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-acent: #3752FDB3;
+        --color-primary:#000000;
+        --color-secondary:#000000B3;
+        --color-text : #00000080;
+        --color-bg_color: #F4F7FF;
+
+      }
+    </style>
+    <!-- Font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- main Style  -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Assingment 05</title>
+</head>
+
+<body class="px-4 bg-bg_color pb-10">
+
+    <!-- **Assingment 05 ** (: Thanks me later :) ~ {All The Best to You!!}
+
+    #1. Main Mark (responsive Optional)===========================================
+        1. NavBar (loglo,tik, color)
+        2. Task assing, discover, date, activity
+        3. 6 card minimum
+        4. same as Card (completed btn)
+        5. completed -> Task
+                    a. Alert(Board update successfully)
+                    b. Task Assinged (1 minise hye 5 hyse)
+                    c. navbar 23 chilo 24 hyse
+                    d. histody Added
+                    e. Clear history to clien
+                    f. click 'completed' -> disable
+                    g. history Added Time in Active log
+        6. Discovery -> click -> onno Page | Back to Desk -> Home + Queston Ans Self
+
+    #2. Challenge Mark=============================================================
+        1. Navbar-> color button -> ranom color -> background
+        2. Date -> Today Date 
+        3. History text "Dynamic Title -> (Fix mobile Button issue)".
+        4. If completed all Tesk -> Alert once more -> 
+                        alert-> "congrates You have completed all the current task"
+    -->
+
+
+
+    <!-- ================================================================= -->
+
+    <main class="max-w-[1536px] mx-auto ">
+        <!-- navbar  -->
+        <nav class=" shadow-sm shadow-black-50 flex justify-between mt-5 p-3 md:p-5  bg-white rounded-xl">
+            <!-- logo  -->
+            <div class="flex items-center cursor-pointer">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <h1 class="hidden md:block text-3xl font-extralight ml-2">Dev<span class="font-semibold">Board</span>
+                </h1>
+            </div>
+
+            <!-- tesk & Random color  -->
+            <div class="flex items-center gap-3 md:gap-6">
+                <a href="index.html">
+                    <button class="bg-acent text-white px-4 py-2 rounded-md cursor-pointer">Back to Desk</button>
+                </a>
+            </div>
+        </nav>
+
+        <!-- main Block Container  -->
+        <div class="rounded-xl mt-10">
+            <!-- single Question  -->
+            <div class="rounded-md p-5 bg-white mb-5">
+                <div class="py-5 border-b border-dotted border-[#ddd]">
+                    <h1 class="text-xl font-semibold ">Question-1: What are the different ways to select an element in
+                        the DOM?
+                    </h1>
+                </div>
+                <div class="py-5 ">
+                    <p>document.getElementById() document.querySelector() document.querySelectorAll() document.getElementByTagName() etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- single Question  -->
+        <div class="rounded-md p-5 bg-white mb-5">
+            <div class="py-5 border-b border-dotted border-[#ddd]">
+                <h1 class="text-xl font-semibold ">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+            </div>
+            <div class="py-5 ">
+                <p>innerHTML return html tag with text, innerText Ignore HTML tag and return only Text , innerContent return only text ignoreing css visibity and html Tag </p>
+            </div>
+        </div>
+        </div>
+
+        <!-- single Question  -->
+        <div class="rounded-md p-5 bg-white mb-5">
+            <div class="py-5 border-b border-dotted border-[#ddd]">
+                <h1 class="text-xl font-semibold ">Question-3: What is event delegation in the DOM?
+
+                </h1>
+            </div>
+            <div class="py-5 ">
+                <p>It's A tacnic of using parent ID to control child. Hence EvenListener don't need to add multiple time or in all child</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- single Question  -->
+        <div class="rounded-md p-5 bg-white mb-5">
+            <div class="py-5 border-b border-dotted border-[#ddd]">
+                <h1 class="text-xl font-semibold ">Question-4: What is event bubbling in the DOM?
+
+                </h1>
+            </div>
+            <div class="py-5 ">
+                <p>Event Bubbling is a system where if a nested child is cliced it trigger all the parent and grand parent of the document. if u click a chiled every parent will be triggerd.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- single Question  -->
+        <div class="rounded-md p-5 bg-white mb-5">
+            <div class="py-5 border-b border-dotted border-[#ddd]">
+                <h1 class="text-xl font-semibold ">Question-5: How do you create, add, and remove elements using
+                    JavaScript?
+
+                </h1>
+            </div>
+            <div class="py-5 ">
+                <p>To create : document.createElement(), to Add : 'tag'.appendChild(), to remove: parent.removeChild() is Used </p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
