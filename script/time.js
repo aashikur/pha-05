@@ -22,7 +22,7 @@ function Time(x){
         let t = (hh > 12)? 'PM' : 'AM';
 
             hh %=12;
-            hh = (hh < 10)? "0"+ hh : hh;
+            // hh = (hh < 10)? "0"+ hh : hh;
 
         return `${hh}:${mm}:${ss} ${t}`;
     }
