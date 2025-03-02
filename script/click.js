@@ -13,9 +13,8 @@ const CardTitle = document.querySelectorAll('.card-title');
      
 
         btn[num].addEventListener('click',function(){
-            console.log(title);
+            alert("DashBoard Has Been Updated!!!")
             btn[num].setAttribute('disabled',true);
-            // console.log("hello");
             TaskLeft.innerHTML ="0" + ( parseFloat(TaskLeft.innerHTML) - 1);
             TaskTotal.innerHTML =( parseFloat(TaskTotal.innerHTML) + 1);
 
@@ -27,7 +26,7 @@ const CardTitle = document.querySelectorAll('.card-title');
         History.appendChild(p);
 
         // Last Alert
-        
+        if( parseFloat(TaskLeft.innerText) == 0) alert("congrates!!! You Have Completed all the current Task");
 
         }) 
     }
@@ -36,6 +35,14 @@ const CardTitle = document.querySelectorAll('.card-title');
     for(let i = 0; i<6 ; i++)   
         ClickBtn(i);
     
+
+
+
+
+
+
+
+
 
 // DayTime 
 // FullDayTime 
