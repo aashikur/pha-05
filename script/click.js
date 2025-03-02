@@ -26,6 +26,7 @@ const CardTitle = document.querySelectorAll('.card-title');
         p.innerHTML = `You have Complete The Task Add <span class="text-primary opacity-70">${title}</span> at <span class="opacity-70 text-primary">${Time("NowTime")}</span>`;        
         History.appendChild(p);
 
+        // Last Alert
         
 
         }) 
