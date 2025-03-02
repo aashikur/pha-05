@@ -21,7 +21,7 @@ const CardTitle = document.querySelectorAll('.card-title');
         // Add title 
         const p = document.createElement('p');
 
-        p.classList.add('px-5', 'py-2', 'rounded-md', 'bg-white', 'mb-5', 'text-text','text-sm');
+        p.classList.add('px-5', 'py-2', 'rounded-md', 'bg-bg_color', 'mb-5', 'text-text','text-sm');
         p.innerHTML = `You have Complete The Task Add <span class="text-primary opacity-70">${title}</span> at <span class="opacity-70 text-primary">${Time("NowTime")}</span>`;        
         History.appendChild(p);
 

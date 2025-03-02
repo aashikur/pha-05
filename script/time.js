@@ -30,3 +30,5 @@ function Time(x){
 
 
 
+document.getElementById('d1').innerHTML = Time("DayTime");
+document.getElementById('d2').innerHTML = Time("FullDayTime");
