@@ -1,6 +1,10 @@
 // This WIll Return Date in Desk.
 
 function Time(x){
+// DayTime 
+// FullDayTime 
+// NowTime
+
     const now = new Date();
     
     if(x == "DayTime")
@@ -16,17 +20,13 @@ function Time(x){
 
         let  hh = now.getHours();
         let t = (hh > 12)? 'PM' : 'AM';
-        
+
             hh %=12;
             hh = (hh < 10)? "0"+ hh : hh;
-
-        
-
 
         return `${hh}:${mm}:${ss} ${t}`;
     }
 }
 
-console.log(Time("NowTime"))
 
 
